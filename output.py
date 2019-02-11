@@ -1,9 +1,11 @@
-'''
-Copied from https://github.com/alexlin0625/EC500_Spring19/tree/output_module with a little modification.
-'''
+"""
+Credit @author: Zhizhou
+
+"""
 
 import json
 import os
+
 
 class patient(object):
     def __init__(self):
@@ -42,18 +44,18 @@ class patient(object):
         data = ''
         if req == "bloodPressure":
             data = self.bp_id
-        elif req == 'pulse':
+        elif req == 'pulse_id':
             data = self.pulse_id
-        elif req == 'bloodOx':
+        elif req == 'temp_id':
             data = self.temp_id
         self.send_select_to_UI(req, data)
 
     def send_alert_to_UI(self):
         send_data = json.dumps({
             'alert_message': self.msg,
-            'bloodPressure': self.bp_id,
-            'pulse': self.pulse_id,
-            'bloodOx': self.temp_id
+            'bp_id': self.bp_id,
+            'pulse_id': self.pulse_id,
+            'temp_id': self.temp_id
         })
         print(send_data)
         return send_data

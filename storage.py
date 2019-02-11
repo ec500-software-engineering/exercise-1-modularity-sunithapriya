@@ -1,3 +1,8 @@
+"""
+Credit @author: Xiangkun Ye
+
+"""
+
 import pymongo
 import json
 
@@ -23,7 +28,6 @@ def insert(PatientInfo, SensorData):
         for k, v in SensorData[id.encode("ascii","replace")].items():
             #print(SensorData[id.encode("ascii","replace")].items())
             dict[k] = v
-        print(dict)
     mycol.insert_one(dict)
 
 def searchPerson(PatientID):

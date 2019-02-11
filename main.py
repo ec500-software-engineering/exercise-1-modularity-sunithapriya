@@ -1,6 +1,7 @@
 from input import *
 from storage import *
 from alert_system import *
+from output import *
 
 if __name__ == "__main__":
 	#Input Module#
@@ -16,7 +17,15 @@ if __name__ == "__main__":
 	patientDetails = searchPerson("1234")
 
 	#Alert Module#
-	#CHeck sensorData for alerts#
+	#Check sensorData for alerts#
 	alert = alertCheck(sensorData)
 	
-	
+	#Output Module#
+	patient = patient()
+	#Recieve message from Alert system
+	patient.recieveFromAlert(alert)
+	#Display alert to UI
+	patient.send_alert_to_UI()
+
+
+

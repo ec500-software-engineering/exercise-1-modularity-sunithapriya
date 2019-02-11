@@ -1,14 +1,6 @@
-'''
-Created on 02/10/2019
-@author: Xiangkun Ye
-Source code copied from https://github.com/alexlin0625/EC500_Spring19/blob/alert-system/alert_system.py.
-'''
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Wed Feb  6 09:29:32 2019
-@author: mohitbeniwal
+Credit @author: Xiangkun Ye
+
 """
 import json
 
