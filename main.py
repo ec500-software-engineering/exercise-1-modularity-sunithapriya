@@ -1,4 +1,5 @@
-from input import *
+from input import getPatientInfo
+from input import readSensorData
 from storage import *
 from alert_system import *
 from output import *
