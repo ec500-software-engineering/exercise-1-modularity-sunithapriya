@@ -1,8 +1,8 @@
-from randomgen import *
-from input import *
-from storage import *
-from alert_system import *
-from output import *
+from input import getPatientInfo, readSensorData
+from storage import searchPerson, insert
+from alert_system import alertCheck
+from output import patient
+from randomgen import randomData
 import threading 
 import Queue
 
