@@ -1,8 +1,7 @@
-from input import getPatientInfo
-from input import readSensorData
-from storage import *
-from alert_system import *
-from output import *
+from input import getPatientInfo, readSensorData
+from storage import searchPerson, insert
+from alert_system import alertCheck
+from output import patient
 
 if __name__ == "__main__":
 	#Input Module#
