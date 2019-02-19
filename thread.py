@@ -1,5 +1,5 @@
-from input import getPatientInfo, readSensorData
-from storage import searchPerson, insert
+from input import getPatientInfo
+from storage import insert
 from alert_system import alertCheck
 from output import patient
 from randomgen import randomData
